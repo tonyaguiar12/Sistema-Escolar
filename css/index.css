@@ -106,8 +106,7 @@ main > section > nav > a{
     
     background-color: #C03F08;
     text-decoration: none;
-    min-width: 400px;
-    max-width: 650px; /* Defina a largura desejada para o link */
+    width: 400px; /* Defina a largura desejada para o link */
     display: inline-block; /* Para tornar a largura eficaz, você pode usar 'inline-block' */
     text-align: center; /* Centraliza o texto dentro do link horizontalmente */
     padding: 5px; /* Adiciona um espaço interno ao redor do texto do link */
