@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;0,900;1,100;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,900;1,100;1,300&display=swap');
+:root {
+    --cor-destaque: #EC8100;
+    --cor-texto: #fff;
+    --cor-destaque-simples: #C03F08;
+    --cor-fundo-simples: #ACCC07;
+
+    --font-destaque: 'IBM Plex Sans', sans-serif;
+    --font-padrão: 'Noto Serif', serif;
+    
+}
+
+/* Configuração Global */
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+body{
+   background-color: --cor-texto;
+   font-family: var(--font-destaque);
+}
+
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor-destaque), var(--cor-destaque-simples));
+    /* Altura minima*/
+    min-height: 150px;
+    text-align: center;
+}
+
+header > h1{
+    color: whitesmoke;
+    font-family: var(--fonte-destaque);
+    padding-top: 30px;
+    /*Dar um espaço inferior*/
+    margin-bottom: 18px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.498);
+  }
+
+header > nav{
+background-color: var(--cor5);
+padding: 10px;
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.11);
+text-align: left;
+
+}
+
+header > nav > a{
+    color: var(--cor-texto);
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 2px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+   }
+header > nav > a:hover{
+background-color: var(--cor-fundo-simples);
+color: var(--cor-destaque);
+border-radius: 5px;
+}
+
+
+main{
+    background-color:  #d8e791;
+    min-width: 300px;
+    max-width: 1000px;
+    height: 600px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.888);
+    margin-bottom: 25px;
+    border-bottom-left-radius: 10px ;
+    border-top-right-radius: 10px;
+}
+
+main > section{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: var(--font-padrão);
+    min-width: 200px;
+    max-width: 800px;
+}
+#bvindas{
+    border-bottom: 1px solid #00000069;
+    font-size: 2em;
+    margin-bottom: 5px;
+    
+}
+
+main > section > nav {
+    text-align: center; /* Centraliza todos os links horizontalmente dentro do <nav> */
+    
+ }
+
+main > section > nav > a{
+    
+    background-color: #C03F08;
+    text-decoration: none;
+    min-width: 400px;
+    max-width: 650px; /* Defina a largura desejada para o link */
+    display: inline-block; /* Para tornar a largura eficaz, você pode usar 'inline-block' */
+    text-align: center; /* Centraliza o texto dentro do link horizontalmente */
+    padding: 5px; /* Adiciona um espaço interno ao redor do texto do link */
+    background-color:var(--cor-fundo-simples); /* Cor de fundo do link */
+    color: #fff; /* Cor do texto do link */
+    text-decoration: none; 
+    border-radius: 5px ;
+    
+}
+
+main > section > nav > a:hover{
+    text-decoration: underline;
+}
+#links{
+    background-color: var(--cor5);
+    padding: 10px;
+
+    text-align: center;
+}
+
+footer{
+    background-color: white;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 7px;
+  }
+  
+footer > p {
+    color: var(--cor-destaque);
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+footer >p > a{
+    color: var(--cor-destaque);
+    background-color: #c7cdaa;
+    padding: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px ;
+}
+
+footer > p > a:hover{
+    background-color: var(--cor-fundo-simples);
+    color: white;
+    text-decoration: underline;
+
+}
+  
+
+
